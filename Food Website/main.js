@@ -1,0 +1,1 @@
+const prev = document.querySelectorAll("")

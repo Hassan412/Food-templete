@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e0efa0f0d.js" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("b").click(function () {
+                $("b ul").slideToggle(200)
+            });
+        });
+
+    </script>
+    <title>Food Website</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="Images/54835.jpg" class="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Recipe</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="col-1">
+                <h1>
+                    All happiness depends on a luisurerly breakfast
+                </h1>
+                <a href="">Order Now</a>
+                <div class="bar">
+                   <small class="prev" onclick="goPrev">PREV</small><span>
+                        <div class="thick-bar"></div>
+                    </span><small class="next" onclick="goNext">NEXT</small>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="Images/14472.jpg">
+                <b>EN<i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    <ul>
+                        <li>English</li>
+                        <li>Germen</li>
+                    </ul>
+                </b>
+            </div>
+        </main>
+    </header>
+    <script>
+        const slide = document.querySelectorAll(".thick-bar")
+        let counter = 0;
+        slide.forEach(
+            (slide,index) => {
+            slide.style.left = '${index * 20}%'
+            }
+        )
+        const slideimage = () => {
+            slides.forEach(
+                (slide) => {
+                    slide.style.left = 'left(-${counter * 100}%)'
+                }
+            )
+        
+        }
+    </script>
+</body>
+
+</html>
